@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".presentation.mvp.view.fragments.AddPotreroInformationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/new_potrero_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Ingrese nuevo potrero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/hectares_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hectareas"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_potrero_edit_text"/>
+
+        <EditText
+            android:id="@+id/hectares_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@id/fodder_resource_selector"
+            app:layout_constraintBottom_toBottomOf="@id/hectares_title"/>
+
+        <TextView
+            android:id="@+id/fodder_resource_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recurso forrajero"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hectares_title" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/fodder_resource_selector"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fodder_resource_title"
+            app:layout_constraintBottom_toBottomOf="@id/fodder_resource_title" />
+
+        <TextView
+            android:id="@+id/observation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observación"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fodder_resource_title" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/observation_selector"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/fodder_resource_selector"
+            app:layout_constraintStart_toStartOf="@id/fodder_resource_selector"
+            app:layout_constraintBottom_toBottomOf="@id/observation_title" />
+
+        <Button
+            android:id="@+id/cancel_add_potrero_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/observation_title"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/continue_add_potrero_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cancel_add_potrero_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

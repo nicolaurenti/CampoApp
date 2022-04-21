@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#365A2A"
+    tools:context=".presentation.mvp.view.activities.ClientActivity">
+
+    <TextView
+        android:id="@+id/client_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/client_toolbar_text"
+        android:textSize="30sp"
+        android:background="#629853"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_clients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#365A2A"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/client_toolbar"/>
+
+    <ImageButton
+        android:id="@+id/button_add_client"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_agregar_usuario"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/button_to_add_client" />
+
+    <ImageButton
+        android:id="@+id/button_delete_client"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_quitar_usuario"
+        android:visibility="gone"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/button_edit_client"
+        app:layout_constraintEnd_toStartOf="@id/button_edit_client"
+        app:layout_constraintStart_toEndOf="@id/button_add_client"
+        android:contentDescription="@string/button_to_delete_client" />
+
+    <ImageButton
+        android:id="@+id/button_edit_client"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_edit_client"
+        android:visibility="gone"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/button_to_edit_client" />
+
+    <FrameLayout
+        android:id="@+id/new_client_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

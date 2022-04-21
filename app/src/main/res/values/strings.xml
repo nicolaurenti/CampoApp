@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CampoApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_client_text">Nuevo Cliente:</string>
+    <string name="insert_new_client_text">Inserte nuevo cliente:</string>
+    <string name="hectares_card_text">hectareas</string>
+    <string name="resources_text">Recurso:</string>
+    <string name="cancel_button_text">Cancelar</string>
+    <string name="add_client_button_text">Continuar</string>
+    <string name="client_toolbar_text">Clientes</string>
+    <string name="button_to_add_client">button to add client</string>
+    <string name="button_to_delete_client">button to delete client</string>
+    <string name="button_to_edit_client">button to edit client</string>
+    <string name="annual_estimate_text">La foto anual es de %1$s </string>
+</resources>

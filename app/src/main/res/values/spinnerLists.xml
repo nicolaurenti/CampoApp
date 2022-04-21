@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fodder_resources_list">
+    <item>Campo Natural Malo - Regular</item>
+    <item>Campo Natural Regular - Bueno</item>
+    <item>Promoción raigrás</item>
+    <item>Pastura base Agropiro</item>
+    <item>Pastura base Agropiro con BPM</item>
+    <item>Pastura base Festuca</item>
+    <item>Pastura base Festuca con BPM</item>
+    <item>Pastura loma base Alfalfa</item>
+    <item>Sorgo Diferido</item>
+    <item>Sorgo Pastoreo</item>
+    <item>Avena Pastoreo</item>
+    <item>Raigrás Anual</item>
+    <item>Rastrojo Trigo/Cebada</item>
+    <item>Rastrojo Maíz</item>
+    <item>Rastrojo Girasol</item>
+    </string-array>
+
+    <string-array name="period_list">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <string-array name="observation_list">
+        <item>Año implantación</item>
+        <item>Manejo tradicional</item>
+        <item>Manejo mejorado</item>
+        <item>Para vacas de cría después del destete</item>
+        <item>Pastoreo en verano con recrías o vacas con ternero</item>
+        <item>Pastoreo diferido</item>
+        <item>Siembra tardía</item>
+        <item>Tipo tetraploide</item>
+        <item>Suelo alcalino barro blanco-pastizales degradados</item>
+        <item>Suelos bajos overos buenos, dulces y media loma</item>
+        <item>Con glifosato verano</item>
+        <item>Con festucosis</item>
+    </string-array>
+
+    <string-array name="weather_list">
+        <item>malo</item>
+        <item>normal</item>
+        <item>bueno</item>
+    </string-array>
+</resources>
