@@ -22,14 +22,14 @@ class PotrerosFragment : Fragment(), OnPotreroListener {
         fun getClientName() : String
     }
 
+    private lateinit var  binding: FragmentPotrerosScreenBinding
+    private lateinit var presenter: PotrerosContract.Presenter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
         }
     }
-
-    private lateinit var  binding: FragmentPotrerosScreenBinding
-    private lateinit var presenter: PotrerosContract.Presenter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

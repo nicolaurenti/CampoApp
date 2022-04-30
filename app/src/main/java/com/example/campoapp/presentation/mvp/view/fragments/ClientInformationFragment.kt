@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.campoapp.R
+import com.example.campoapp.databinding.FragmentClientInformationBinding
 
 
 class ClientInformationFragment : Fragment() {
 
-
+    private lateinit var binding: FragmentClientInformationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -20,8 +21,9 @@ class ClientInformationFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_client_information, container, false)
+    ): View {
+        binding = FragmentClientInformationBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     companion object {
